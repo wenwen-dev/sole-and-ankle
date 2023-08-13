@@ -1,5 +1,15 @@
 # Sole&Ankle — Module 4 workshop
 
+## My reflections
+
+### Centring nav with logo on the same line
+
+- How to centre the nav bar when it has a logo on the left and we don't want the logo taken into calculation?
+- Absolute positioning on the logo works. But the tradeoff is it poses risks for when the container changes in the future, and it might overlap with smaller screen sizes.
+- Think of centring as having 2 (invisible) columns on the nav's left and right side. And we want the 2 columns grow to consume all (and equal amount of) space, i.e. flex-grow: 1. We wrap the logo inside the first column, and it's important that the flex-basis is 0, to ensure 2 columns have equal width, i.e. flex: 1; (1 1 0px)
+
+---
+
 In this workshop, our goal is to finish building an e-commerce store!
 
 The good news is, most of our work is done already. We just need to write some additional CSS to construct the layout; things are a bit messy right now!
