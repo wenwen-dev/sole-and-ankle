@@ -14,7 +14,6 @@ const Header = () => {
       <MainHeader>
         <Side>
           <Logo />
-          
         </Side>
         <Nav>
           <NavLink href="/sale">Sale</NavLink>
@@ -43,7 +42,9 @@ const MainHeader = styled.div`
 
 const Side = styled.div`
   flex: 1;
-`
+`;
+
+
 const Nav = styled.nav`
   display: flex;
   gap: 3rem;
